@@ -1,20 +1,20 @@
 # Creating PDF from multiple screenshot image
 
-This script is to create PDF file from multiple screenshot image.
+This script is to create a PDF file from multiple screenshot image.
 
-The script has been tested on MACOSX or Windows 11 (using WSL)
+The script has been tested on Ubuntu Linux, MACOSX or Windows 11 (using WSL)
 
-# software required for this script to run
+# software required for this script to run (please install these before running the script)
 - Python3
 - ImageMagick
 # Cropsize reference
 This is the reference for CROPSIZE variable
 ![cropsize.jpg](./cropsize.jpg)
 # Work flow
-1. Determine the CROPSIZE, based on your system (Windows 11 or MACOSX) and screen resolution
-2. change variable SOURCEDIR to the default directory when screenshot file is stored. For example for MACOSX it will be "/Users/UserName/Desktop", for Windows 11 (under WSL) it will be "/mnt/c/Users/UserName/OneDrive/Pictures/Screenshots"
+1. Determine the CROPSIZE, based on your system (Linux, Windows 11 or MACOSX) and screen resolution
+2. change variable SOURCEDIR to the default directory when screenshot file is stored. For example for Ubuntu Linux, it will be "/home/UserName/Pictures/Screenshots", for MACOSX it will be "/Users/UserName/Desktop", for Windows 11 (under WSL) it will be "/mnt/c/Users/UserName/OneDrive/Pictures/Screenshots"
 3. Open the application and put it in fullscreen mode.
-4. Do screenshot, on MACOSX press SHIFT+COMMAND+3 , on Windows 11 press WindowsKey+PrtScr
+4. Do a screenshot, on Ubuntu Linux press ALT-PrtSCR, on MACOSX press SHIFT+COMMAND+3 , on Windows 11 press WindowsKey+PrtScr
 5. On the application, go the next page, repeat step 4
 6. repeat Step 4 - 5 until all pages are captured
 7. Drop to shell/terminal, and run the script [create_pdf.py](./create_pdf.py)

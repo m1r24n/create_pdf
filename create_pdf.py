@@ -1,18 +1,31 @@
 #!/usr/bin/env python3
-import subprocess, os, shutil
+import subprocess, os, shutil, platform
 
 # edit the following variable based on the system
 # CROPSIZE="AxB+C+D"
 # AxB : pixel size of the crop area, A = horizontal pixel, B = vertical pixel
 # C : horizontal distance for left edge of the screen
 # D : vertical distance from top edge of the screen
+
+# change this accordingly
+# cropsize for Ubuntu Linux, screensize 2880x1800
+CROPSIZE="1890x2138+1423+115"
+
 # cropsize for MacOSX, screensize 1800x1169
 # CROPSIZE="1700x1950+936+247"
-# SOURCEDIR="/Users/UserName/Desktop"
-# for windows 11
+
 # cropsize for Windows 11, screensize 2880x1800
-SOURCEDIR="/mnt/c/Users/UserName/OneDrive/Pictures/Screenshots"
-CROPSIZE="1360x1760+755+22"
+# CROPSIZE="1360x1760+755+22"
+
+UserName=os.environ['USERNAME']
+OperatingSystem = platform.system().lower()
+if OperatingSystem == "linux": 
+  if "microsoft" in platform.uname().release.lower(): 
+    SOURCEDIR=f"/mnt/c/Users/{UserName}/OneDrive/Pictures/Screenshots"
+  else:
+   SOURCEDIR=f"/home/{UserName}/Pictures/Screenshots"
+elif OperatingSystem == "darwin": 
+  SOURCEDIR=f"/Users/{UserName}/Desktop"
 
 IMAGEDIR = "image"
 NEWIMAGEDIR = "new"
