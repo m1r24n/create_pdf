@@ -13,7 +13,7 @@ This is the reference for CROPSIZE variable
 # Work flow
 1. Determine the CROPSIZE, based on your system (Windows 11 or MACOSX) and screen resolution
 2. change variable SOURCEDIR to the default directory when screenshot file is stored. For example for MACOSX it will be "/Users/UserName/Desktop", for Windows 11 (under WSL) it will be "/mnt/c/Users/UserName/OneDrive/Pictures/Screenshots"
-3. Open the application (for example ebook reader) and put it in fullscreen mode.
+3. Open the application and put it in fullscreen mode.
 4. Do screenshot, on MACOSX press SHIFT+COMMAND+3 , on Windows 11 press WindowsKey+PrtScr
 5. On the application, go the next page, repeat step 4
 6. repeat Step 4 - 5 until all pages are captured
