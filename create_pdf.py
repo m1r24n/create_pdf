@@ -7,12 +7,12 @@ import subprocess, os, shutil
 # C : horizontal distance for left edge of the screen
 # D : vertical distance from top edge of the screen
 # cropsize for MacOSX, screensize 1800x1169
-CROPSIZE="1700x1950+936+247"
-SOURCEDIR="/Users/irzan/Desktop"
+# CROPSIZE="1700x1950+936+247"
+# SOURCEDIR="/Users/UserName/Desktop"
 # for windows 11
 # cropsize for Windows 11, screensize 2880x1800
-# SOURCEDIR="/mnt/c/Users/irzan/OneDrive/Pictures/Screenshots"
-# CROPSIZE="1360x1760+755+22"
+SOURCEDIR="/mnt/c/Users/UserName/OneDrive/Pictures/Screenshots"
+CROPSIZE="1360x1760+755+22"
 
 IMAGEDIR = "image"
 NEWIMAGEDIR = "new"
