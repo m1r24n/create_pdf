@@ -1,6 +1,6 @@
 # Creating PDF from multiple screenshot image
 
-This script is to create a PDF file from multiple screenshot image.
+This script is to create a PDF file from multiple screenshot images.
 
 The script has been tested on Ubuntu Linux, MACOSX or Windows 11 (using WSL)
 
