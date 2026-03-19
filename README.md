@@ -2,7 +2,7 @@
 
 This script is to create a PDF file from multiple screenshot images.
 
-The script has been tested on Ubuntu Linux, MACOSX or Windows 11 (using WSL)
+The script has been tested on Ubuntu Linux, MACOSX,  Windows 11 (using WSL) and Windows 11 (native)
 
 # software required for this script to run (please install these before running the script)
 - Python3
