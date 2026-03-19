@@ -9,13 +9,13 @@ import subprocess, os, shutil, platform
 
 # change this accordingly
 # cropsize for Ubuntu Linux, screensize 2880x1800
-#CROPSIZE="1890x2138+1423+115"
+CROPSIZE="1890x2138+1423+115"
 
 # cropsize for MacOSX, screensize 1800x1169
 # CROPSIZE="1610x1950+1350+245"
 
 # cropsize for Windows 11, screensize 2880x1800
-CROPSIZE="1360x1760+755+22"
+# CROPSIZE="1360x1760+755+22"
 
 IMAGEDIR = "image"
 NEWIMAGEDIR = "new"
@@ -58,7 +58,9 @@ for i in files:
 # result = subprocess.run(['ls', IMAGEDIR], capture_output=True, text=True, check=True)
 # d1 = [int(i.removeprefix('Screenshot (').removesuffix(').png')) if i else 0 for i in result.stdout.split("\n")]
 # d1 = [i if i else 0 for i in result.stdout.split("\n")]
+# print(d1)
 d1 = os.listdir(IMAGEDIR) 
+d1.sort()
 print(d1)
 p = 1
 list_of_pages = []
